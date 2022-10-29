@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Welcome!</h3>
+
+        <label for="password">Insert Password</label>
+        <input type="password" placeholder="Password" id="password">
+        
+        <button class="login" type="button" onclick="checkform()">Login</button>
+
+        <h4>About Me</h4>
+
+        <div class="social">
+          <a href="https://www.google.com" target="_blank">
+            <button class="ig">
+              <i class="fa">&#xf16d;</i>
+              Instagram
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/muh-adli/">
+            <button class="li">
+              <i class="fa">&#xf08c;</i>
+              Linkedin
+            </button>
+          </a>
+        </div>
+    </form>
+
+    <script>
+      function checkform(){
+        var password = document.getElementById("password").value;
+
+        if(password == "12345" || password == "12345"){
+          location.href='./homepage.html'
+        }
+        else{
+          alert("Gagal Login")
+        }
+      }
+    </script>
+</body>
+</html>
